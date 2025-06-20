@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblib_gravity_calc.a CMakeFiles/lib_gravity_calc.dir/main.cpp.o
+/usr/bin/ranlib liblib_gravity_calc.a

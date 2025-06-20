@@ -1,0 +1,4 @@
+/home/rossini/projeto_aleatorio_cpp/CMakeFiles/_gravity_calc.dir
+/home/rossini/projeto_aleatorio_cpp/CMakeFiles/mod_teste.dir
+/home/rossini/projeto_aleatorio_cpp/CMakeFiles/edit_cache.dir
+/home/rossini/projeto_aleatorio_cpp/CMakeFiles/rebuild_cache.dir
