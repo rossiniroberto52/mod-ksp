@@ -3,10 +3,11 @@
 using namespace std;
 
 int main() {
-    float mass_terra = 59.72;
+    float massF, massE, distance;
+    float mass_terra = 59.972*pow(10, 24);
     float eng_imp, gravity_acell, MassF, MassE;
     int opcao;
-    printf("opções\n1) calc de deltaV \n2) satelite gravitational force\n3) angular velocity\nopção: ");
+    printf("opções\n1) calc de deltaV \n2) satelite gravitational force\n3) angular velocity\n4) time to revolution\n5) thirty kepler law\nopção: ");
     cin >> opcao;
     if(opcao == 1){
         cout << "forca do motor: " << endl;
@@ -30,7 +31,7 @@ int main() {
             cout << "é possivel ir a orbita!" << endl;
         }
     }else if(opcao == 2){
-        float massF, massE, distance, gravity_str;
+        float gravity_str;
         cout << "Massa total: " << endl;
         cin >> massF;
         cout << "Massa limpa: " << endl;
@@ -41,7 +42,7 @@ int main() {
         float res = gravity_art_satelit(massF, massE, distance);
         cout << "força gravitacional do satelite: " << res << endl;
     }else if(opcao == 3){
-        float massF, massE, distance;
+        
         cout << "Massa total: " << endl;
         cin >> MassF;
         cout << "Massa vazia: " << endl;
@@ -53,6 +54,23 @@ int main() {
         float velocity = angular_velocity_angular_momenty(time);
         cout << "velocity on corpse: " << velocity << " (m/s)" <<endl;
         cout << "time to revolution: " << time << (" (Hours)")<<endl; 
+    }
+    else if(opcao == 4){
+        cout << "Mass Full" << endl;
+        cin >> massF;
+        cout << "Mass Empyt" <<endl;
+        cin >> massE;
+        cout << "distance" << endl;
+        cin >> distance;
+        cout << "time ro revolution: " << orbit_period_time(massF, massF, distance) << "days" <<endl;
+    }else if(opcao == 5){
+        cout << "Mass Full" << endl;
+        cin >> massF;
+        cout << "Mass Empyt" <<endl;
+        cin >> massE;
+        cout << "distance" << endl;
+        cin >> distance;
+        cout << "K = " << thirty_kepler_law(massF, massE, distance)<<endl;
     }
 
 
