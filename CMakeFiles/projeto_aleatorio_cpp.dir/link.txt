@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/projeto_aleatorio_cpp.dir/main.cpp.o -o projeto_aleatorio_cpp 
